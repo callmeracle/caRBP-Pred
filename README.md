@@ -1,4 +1,4 @@
-# caRBPpred
+# caRBPPred
 Predicting chromatin-associated RNA-binding proteins from short sequencing using deep learning
 
 To predict the potential caRBPs with sliding window (50bp), we can use the following command:
