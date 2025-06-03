@@ -95,10 +95,10 @@ if __name__ == "__main__":
                'V': 18, 'W': 19, 'Y': 20, 'X': 21, 'U': 23, 'J': 24, 'Z': 25, 'O': 26}
 
 # 数据预处理
-X_prot_seq, y_prot_seq = preprocess_data("/lustre/sunqiang/01_project/24_chrRBP/00_raw_data/CARBP/check_overlap/merged_caRBP_fasta.csv", "sequence", "label", maxlen=1000, mapping=mapping)
-X_prot_ss, y_prot_ss = preprocess_data("/mnt/hwt2_data1/sunqiang/software/ps4-dataset/merged_caRBP_ss.csv", "ss", "label", maxlen=1000, mapping=mapping)
-X_pep_seq, y_pep_seq = preprocess_data("/lustre/sunqiang/01_project/24_chrRBP/00_raw_data/CARBP/merged_peptide.csv", "sequence", "label", maxlen=50, mapping=mapping)
-X_pep_ss, y_pep_ss = preprocess_data("/mnt/hwt2_data1/sunqiang/software/ps4-dataset/merged_peptide_ss.csv", "ss", "label", maxlen=50, mapping=mapping)
+X_prot_seq, y_prot_seq = preprocess_data("merged_caRBP_fasta.csv", "sequence", "label", maxlen=1000, mapping=mapping)
+X_prot_ss, y_prot_ss = preprocess_data("merged_caRBP_ss.csv", "ss", "label", maxlen=1000, mapping=mapping)
+X_pep_seq, y_pep_seq = preprocess_data("merged_peptide.csv", "sequence", "label", maxlen=50, mapping=mapping)
+X_pep_ss, y_pep_ss = preprocess_data("merged_peptide_ss.csv", "ss", "label", maxlen=50, mapping=mapping)
 
 # 拆分数据集
 X_train_prot_seq, X_test_prot_seq, y_train_prot_seq, y_test_prot_seq = train_test_split(X_prot_seq, y_prot_seq, test_size=0.2, random_state=42)
