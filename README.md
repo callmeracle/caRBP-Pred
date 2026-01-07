@@ -1,9 +1,9 @@
-# caRBPPred
-Predicting chromatin-associated RNA-binding proteins from short sequencing using deep learning
+# caRBP-Pred
+Deep Learning-based Prediction of Chromatin-Associated RNA-Binding Proteins Using Short Peptide Sequences
 
-Authors: Qiang Sun, Feng Yang, Xiaona Chen, Hao Sun, Huating Wang
+Authors: Qiang Sun, Feng Yang, Hao Sun, Xiaona Chen, Huating Wang
 
-caRBPPred is written in python3 for GUN Linux/Unix platforms. 
+caRBP-Pred is written in python3 for GUN Linux/Unix platforms. 
 The training script various_agorithms.py depends on the tensorflow=2.8.0 
 
 To predict the potential caRBPs, users just download the prediction_with_sliding_window.py, positive_peptide.csv, and negative_peptide.csv files, and use the following command:
