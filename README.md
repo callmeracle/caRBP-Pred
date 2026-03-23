@@ -42,6 +42,7 @@ The ProtT5-XL model can be downloaded from here (https://huggingface.co/Rostlab/
 
 # Usage  
 **1. Feature Extraction**    
+
 Use gen_T5_feature.py to extract pre-trained language model features from protein sequences:
 ```
 python gen_T5_feature.py
