@@ -40,7 +40,15 @@ conda activate carbp_env
 ```
 pLM model can be downloaded from here (https://huggingface.co/Rostlab/prot_t5_xl_uniref50/tree/main)
 
-# Identifying Potential caRBPs
+# Usage  
+generate embedding
+To extract the embedding from the ProtT5-XL
+```
+
+```
+
+
+Identifying Potential caRBPs
 To predict the potential caRBPs, just run 
 ```
 python inference/inference.py
