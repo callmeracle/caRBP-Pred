@@ -41,8 +41,8 @@ conda activate carbp_env
 ```
 pLM model can be downloaded from here (https://huggingface.co/Rostlab/prot_t5_xl_uniref50/tree/main)
 
-# Steps for Identifying Potential caRBPs
-Once you have a trained model (.h5 file), use the following steps for discovery:    
+# Identifying Potential caRBPs
+You can use the following steps for discovery:    
 Extract Features: Generate pLM embeddings for the target sequences using the extraction script.    
 Run Inference:  
 ```
