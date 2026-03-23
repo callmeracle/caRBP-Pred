@@ -8,14 +8,14 @@ This repository contains a deep learning framework designed to identify Chromati
 - **Comprehensive Ablation:** Includes scripts to evaluate the relative contributions of sequence, secondary structure (SS), and pLM features.    
 
 # Dependency
-Python 3.8  
-PyTorch 2.4.1    
-TensorFlow 2.13.1   
-Transformers 4.46.3  
-Scikit-learn 1.3.2  
-Pandas 2.0.3  
-Numpy 1.24.3  
-Matplotlib 3.7.5
+- Python 3.8  
+- PyTorch 2.4.1    
+- TensorFlow 2.13.1   
+- Transformers 4.46.3  
+- Scikit-learn 1.3.2  
+- Pandas 2.0.3  
+- Numpy 1.24.3  
+- Matplotlib 3.7.5
 
 # Content
 - code: Directory containing the data processing, training, and inference script.
