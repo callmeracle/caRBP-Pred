@@ -34,7 +34,7 @@ This repository contains a deep learning framework designed to identify Chromati
 
 # Installation
 ```
-git clone https://github.com/YourUsername/caRBP-ML.git    
+git clone https://github.com/callmeracle/caRBP-Pred.git    
 cd caRBP-ML  
 conda create -n carbp_env python=3.8  
 conda activate carbp_env
