@@ -38,21 +38,47 @@ cd caRBP-Pred
 conda create -n carbp_env python=3.8  
 conda activate carbp_env
 ```
-pLM model can be downloaded from here (https://huggingface.co/Rostlab/prot_t5_xl_uniref50/tree/main)
+ProtT5-XL model can be downloaded from here (https://huggingface.co/Rostlab/prot_t5_xl_uniref50/tree/main)
 
 # Usage  
-generate embedding
-To extract the embedding from the ProtT5-XL
+**1. Feature Extraction**  
+Use gen_T5_feature.py to extract pre-trained language model features from protein sequences:
+```
+python gen_T5_feature.py
 ```
 
+***Input Format***
+```
+protein_id,sequence
+P12345,MKTLLILGL...  
+P67890,GSHMASSNA...  
 ```
 
+***Output:***
+protein_plm_residue.npy
 
-Identifying Potential caRBPs
-To predict the potential caRBPs, just run 
+**2. Model Training**
+Run plm_protein_model.py for 5-fold cross-validation training:
+```
+python plm_protein_model.py
+```
+
+**3. Model Inference**
+Use the trained model to predict new sequences:
 ```
 python inference/inference.py
-```
-The output file include
-Thresholding: The default decision threshold is set to 0.7 to minimize false positives during genome-wide screening.  
-Analyze Results: Review Final_BiLSTM_pLM_Inference.csv for gene names, probabilities, and classification decisions.  
+```  
+
+***Configuration (modify in __main__):***  
+task = {  
+    "input_csv": "inference/all_fasta.csv",           # Input sequences  
+    "ptm_npy_path": "./inference_protein_plm_residue.npy",  # Pre-computed features  
+    "model_path": "../model/model.h5",                # Model path  
+    "output_csv": "Final_BiLSTM_pLM_Inference.csv"      # Output results  
+}  
+
+***Output results:***
+Gene_Name,Prediction_Prob,Decision,Threshold  
+Protein_A,0.8923,Positive,0.7  
+Protein_B,0.2341,Negative,0.7  
+...
