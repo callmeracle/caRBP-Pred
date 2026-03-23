@@ -46,27 +46,28 @@ Use gen_T5_feature.py to extract pre-trained language model features from protei
 ```
 python gen_T5_feature.py
 ```    
-***Input Format***
+- ***Input Format***
 ```
 protein_id,sequence
 P12345,MKTLLILGL...  
 P67890,GSHMASSNA...  
 ```    
-***Output:***   
-protein_plm_residue.npy  
-        
+- ***Output:***
+```
+protein_plm_residue.npy
+```              
 **2. Model Training**
 Run plm_protein_model.py for 5-fold cross-validation training:
 ```
 python plm_protein_model.py
 ```
-        
+                  
 **3. Model Inference**
 Use the previous trained model to predict new sequences:
 ```
 python inference/inference.py
 ```  
-***Configuration (modify in __main__):***  
+- ***Configuration (modify in __main__):***  
 ```
 task = {  
     "input_csv": "inference/all_fasta.csv",           # Input sequences  
@@ -76,7 +77,7 @@ task = {
 }  
 ```
 
-***Output results:***
+- ***Output results:***
 ```
 Gene_Name,Prediction_Prob,Decision,Threshold  
 Protein_A,0.8923,Positive,0.7  
