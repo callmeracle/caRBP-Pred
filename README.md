@@ -41,7 +41,7 @@ conda activate carbp_env
 The ProtT5-XL model can be downloaded from here (https://huggingface.co/Rostlab/prot_t5_xl_uniref50/tree/main)
 
 # Usage  
-**1. Feature Extraction**  
+**1. Feature Extraction**    
 Use gen_T5_feature.py to extract pre-trained language model features from protein sequences:
 ```
 python gen_T5_feature.py
