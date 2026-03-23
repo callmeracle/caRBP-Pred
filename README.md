@@ -46,7 +46,7 @@ Once you have a trained model (.h5 file), use the following steps for discovery:
 Extract Features: Generate pLM embeddings for the target sequences using the extraction script.    
 Run Inference:  
 ```
-python scripts/inference.py
+python inference/inference.py
 ``` 
 Thresholding: The default decision threshold is set to 0.7 to minimize false positives during genome-wide screening.  
 Analyze Results: Review Final_BiLSTM_pLM_Inference.csv for gene names, probabilities, and classification decisions.  
