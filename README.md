@@ -38,6 +38,7 @@ conda create -n carbp_env python=3.8
 conda activate carbp_env
 ```
 The ProtT5-XL model can be downloaded from here (https://huggingface.co/Rostlab/prot_t5_xl_uniref50/tree/main)
+Embedding files can be downloaded from here (https://drive.google.com/drive/folders/1TrboNK1oMGsd03l1G9CyPhQWVOuyt2Gt?usp=sharing)
 
 # Usage  
 **1. Feature Extraction**    
