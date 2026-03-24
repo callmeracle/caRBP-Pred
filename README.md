@@ -3,8 +3,7 @@ This repository contains a deep learning framework designed to identify Chromati
 
 # Key Features  
 - **pLM Integration:** Leverages ProtT5-XL-UniRef50 embeddings to capture high-dimensional evolutionary and biophysical information.    
-- **Hybrid Loss Function:** Implements a Hybrid Dice-Focal Loss to specifically address class imbalance in biological datasets.    
-- **Comprehensive Ablation:** Includes scripts to evaluate the relative contributions of sequence and pLM features.    
+- **Hybrid Loss Function:** Implements a Hybrid Dice-Focal Loss to specifically address class imbalance in biological datasets.       
 
 # Dependencies
 - Python 3.8  
