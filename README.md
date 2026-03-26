@@ -1,4 +1,4 @@
-# Deep Learning-based Prediction of Chromatin-Associated RNA-Binding Proteins   
+# caRBP-Pred: Leveraging Protein Language Models for Prediction of Chromatin-Associated RNA-Binding Proteins   
 This repository contains a deep learning framework designed to identify Chromatin-associated RNA-binding Proteins (caRBPs) using Protein Language Models (pLM) and advanced hybrid neural architectures.
 
 # Key Features  
